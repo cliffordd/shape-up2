@@ -13,10 +13,11 @@ box-sizing: border-box;
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    max-width: 1000px;
+    max-width: 1024px;
     width: 100%;
     margin: 0 auto;
     border: 2px solid steelblue;
+    box-shadow: 5px 5px 15px black;
 }
 
 
@@ -88,7 +89,10 @@ header h3 {
 }
 header img {
     float: left;
-    padding: 10px;
+    padding: 1em;
+    max-width: 140px;
+    min-width: 70px;
+    width: 100%;
 }
 
 #nav_menu {
@@ -136,7 +140,7 @@ main {
     clear: both;
 }
 h1 {
-    margin-left: 25px;
+    
     text-align: center;
 
 }
@@ -144,7 +148,7 @@ h1 {
 section {
     float: right;
     width: 75%;
-    padding: 0 15px;
+    padding: 0 .5em;
 }
 section h2 {
     margin-top: 10px;
@@ -154,18 +158,18 @@ section h1, section h3, section p{
 }
 
 section blockquote {
-    margin: 0 40px;
-    padding-left: 5px;
-    border-left: 5px solid maroon;
+    margin: 0 10%;
+    padding-left: .5em;
+    border-left: .5em ridge maroon;
     background-color: lightgray;
 }
 aside {
     float: left;
     width: 25%;
-    padding-left: 10px;
+    padding-left: .5em;
 }
 aside ul {
-    line-height: 20px;
+    line-height: 1.5em;
 }
 aside ul{
     margin-left: 25px;
@@ -182,4 +186,52 @@ footer {
     background-color: steelblue;
     color: white;
 
+}
+#mobilemenu{
+    display: none;
+}
+
+/* mwen use pati sa pou mw ka jare web lan menm si screen lan ap redwi*/
+
+
+@media only screen and (max-width: 959px) {
+    bordy{
+        font-size: 90%;
+        box-shadow: none;
+    }
+
+}
+@media only screen and (max-width: 767px) {
+    #nav_menu{
+        display: none;
+
+    }
+    #mobilemenu {
+        display: block;
+        
+
+    }
+    .slicknav_menu{
+        background-color: steelblue;
+
+    }
+    section, aside {
+        float: none;
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 767px) {
+
+    header img{
+        float: none;
+        margin: 0 auto;
+        display: block;
+    }
+    header h2, header h3 {
+        text-align: center;
+        
+
+
+    }
 }
