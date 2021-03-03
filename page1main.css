@@ -1,0 +1,60 @@
+html{background-color: white;}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(221, 215, 215);
+  
+}
+/* this is hearder*/
+header {
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 20px;
+    border: solid black;
+    background-image: url(10HAITI-slide-2V09-superJumbo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+header h1{
+    text-shadow: 2px -2px 2px white;
+}
+
+/* Pseudo classes for link*/
+
+/* unvisited link */
+a:link {
+    color: rgb(51, 51, 223);
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color:red;
+    text-decoration: underline;
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(67, 156, 185);
+    text-decoration: underline;
+  }
+  section{
+    float: left;
+    width: 50%;
+  }
+  /* this is aside*/
+  aside{
+    background-color: rgb(177, 142, 142);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    float: right;
+    width: 50%;
+  }
